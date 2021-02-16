@@ -1,0 +1,16 @@
+[
+{
+  "modid": "firstmod",
+  "name": "My First Mod",
+  "description": "This is a mod which has been debug for a lang time",
+  "version": "1.0.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Cheng Zeru"],
+  "credits": "The author makes this mod for Java learning",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

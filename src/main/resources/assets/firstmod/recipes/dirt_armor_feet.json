@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "firstmod:dirt_ball"
+    }
+  },
+  "result": {
+    "item": "firstmod:dirt_armor_feet"
+  }
+}
