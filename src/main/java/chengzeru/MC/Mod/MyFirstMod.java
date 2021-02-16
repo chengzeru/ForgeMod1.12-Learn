@@ -2,7 +2,6 @@ package chengzeru.MC.Mod;
 
 import chengzeru.MC.Mod.capability.CapabilityRegistryHandler;
 import chengzeru.MC.Mod.client.renderer.RenderRegistryHandler;
-import chengzeru.MC.Mod.command.CommandLoader;
 import chengzeru.MC.Mod.crafting.FurnaceRecipeRegistryHandler;
 import chengzeru.MC.Mod.network.NetworkRegistryHandler;
 import chengzeru.MC.Mod.potion.PotionRegistryHandler;
