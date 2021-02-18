@@ -25,5 +25,12 @@ message.firstmod.power.doNotHaveEnoughPower=你拥有的力量还不够多 , 快
 tooltip.firstmod.power.blue=§b蓝色    §r%.1f
 tooltip.firstmod.power.green=§a绿色    §r%.1f
 tooltip.firstmod.power.orange=§e橙色    §r%.1f
-commands.clearPower.usage=/clearPower clear[清空]
 tooltip.firstmod.clearPower=泥土之力已被清空
+
+commands.power.usage=/power <clear|add> [颜色] [值]
+commands.power.clearBlue=§b蓝色之力已被清除%s
+commands.power.clearGreen=§a绿色之力已被清除%s
+commands.power.clearOrange=§e橘色之力已被清除%s
+commands.power.addBlue=§b蓝色之力已被添加%s
+commands.power.addGreen=§a绿色之力已被添加%s
+commands.power.addOrange=§e橘色之力已被添加%s

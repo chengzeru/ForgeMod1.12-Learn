@@ -1,0 +1,36 @@
+item.firstmod.dirtBall.name=泥土球
+tile.firstmod.compressedDirt.name=压缩泥土
+tile.firstmod.dirtCompressor.name=泥土压缩机
+itemGroup.firstmod=FirstMod创造模式物品栏
+item.firstmod.dirtPickaxe.name=泥土稿
+item.firstmod.dirtArmor.feet.name=泥土靴子
+item.firstmod.dirtArmor.legs.name=泥土护腿
+item.firstmod.dirtArmor.chest.name=泥土胸甲
+item.firstmod.dirtArmor.head.name=泥土头盔
+item.firstmod.deathSword.name=死亡圣剑
+enchantment.firstmod.explosion=爆炸
+entity.Villager.firstmod.dirtWorker=泥土工人
+entity.firstmod.DirtBallKing.name=土球王
+entity.firstmod.DirtBall.name=泥土球
+effect.firstmod.dirtProtection=泥土保护
+potion.effect.firstmod.dirtProtection=泥土保护药水
+splash_potion.effect.firstmod.dirtProtection=喷溅型泥土保护药水
+lingering_potion.effect.firstmod.dirtProtection=滞留型泥土保护药水
+tipped_arrow.effect.firstmod.dirtProtection=泥土保护之箭
+message.firstmod.welcome=欢迎 %2$s 来到 %1$s !
+message.firstmod.power.add.green=绿色之力 += %.1f
+message.firstmod.power.add.blue=蓝色之力 += %.1f
+message.firstmod.power.add.orange=橙色之力 += %.1f
+message.firstmod.power.doNotHaveEnoughPower=你拥有的力量还不够多 , 快去打土球王获得能量吧!
+tooltip.firstmod.power.blue=§b蓝色    §r%.1f
+tooltip.firstmod.power.green=§a绿色    §r%.1f
+tooltip.firstmod.power.orange=§e橙色    §r%.1f
+tooltip.firstmod.clearPower=泥土之力已被清空
+
+commands.power.usage=/power <clear|add> [color] [value]
+commands.power.clearBlue=§b蓝色之力已被清除%s
+commands.power.clearGreen=§a绿色之力已被清除%s
+commands.power.clearOrange=§e橘色之力已被清除%s
+commands.power.addBlue=§b蓝色之力已被添加%s
+commands.power.addGreen=§a绿色之力已被添加%s
+commands.power.addOrange=§e橘色之力已被添加%s
