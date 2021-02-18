@@ -27,7 +27,7 @@ tooltip.firstmod.power.green=§a绿色    §r%.1f
 tooltip.firstmod.power.orange=§e橙色    §r%.1f
 tooltip.firstmod.clearPower=泥土之力已被清空
 
-commands.power.usage=/power <clear|add> [color] [value]
+commands.power.usage=/power <clear|add> [颜色] [值]
 commands.power.clearBlue=§b蓝色之力已被清除%s
 commands.power.clearGreen=§a绿色之力已被清除%s
 commands.power.clearOrange=§e橘色之力已被清除%s
