@@ -46,4 +46,5 @@ public class MyFirstMod {
         FurnaceRecipeRegistryHandler.register();
         PotionRegistryHandler.register();
     }
+
 }
