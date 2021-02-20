@@ -1,6 +1,7 @@
 package chengzeru.MC.Mod.block;
 
 import akka.io.Tcp;
+import chengzeru.MC.Mod.fluid.BlockFluidMud;
 import chengzeru.MC.Mod.tileentity.TileEntityDirtCompressor;
 import net.minecraft.block.Block;
 import net.minecraft.tileentity.TileEntity;
@@ -18,12 +19,14 @@ import scala.reflect.internal.Trees;
 public class BlockRegistryHandler {
     public static final BlockComPressedDirt BLOCK_COMPRESSED_DIRT = new BlockComPressedDirt();
     public static final BlockDirtCompressor BLOCK_DIRT_COMPRESSOR = new BlockDirtCompressor();
+    public static final BlockFluidMud BLOCK_FLUID_MUD = new BlockFluidMud();
 
     @SubscribeEvent
     public static void onRegistry(RegistryEvent.Register<Block> event) {
         IForgeRegistry<Block> registry = event.getRegistry();
         registry.register(BLOCK_COMPRESSED_DIRT);
         registry.register(BLOCK_DIRT_COMPRESSOR);
+        registry.register(BLOCK_FLUID_MUD);
         TileEntity.register(TileEntityDirtCompressor.ID, TileEntityDirtCompressor.class);
     }
 }

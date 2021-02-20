@@ -3,8 +3,10 @@ package chengzeru.MC.Mod;
 import chengzeru.MC.Mod.capability.CapabilityRegistryHandler;
 import chengzeru.MC.Mod.client.renderer.RenderRegistryHandler;
 import chengzeru.MC.Mod.crafting.FurnaceRecipeRegistryHandler;
+import chengzeru.MC.Mod.fluid.FluidRegistryHandler;
 import chengzeru.MC.Mod.network.NetworkRegistryHandler;
 import chengzeru.MC.Mod.potion.PotionRegistryHandler;
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -22,12 +24,26 @@ public class MyFirstMod {
     public static final String VERSION = "1.0.0";
 
     private static Logger logger;
+
+    static {
+        FluidRegistry.enableUniversalBucket();
+    }
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
         logger = event.getModLog();
         NetworkRegistryHandler.registry();
         CapabilityRegistryHandler.register();
+        if (FluidRegistry.isFluidRegistered(FluidRegistryHandler.fluidMud))
+        {
+            event.getModLog().info("Found fluid {}, the registration is canceled. ", FluidRegistryHandler.fluidMud.getName());
+            FluidRegistryHandler.fluidMud = FluidRegistry.getFluid(FluidRegistryHandler.fluidMud.getName());
+        }
+        else
+        {
+            FluidRegistry.registerFluid(FluidRegistryHandler.fluidMud);
+            FluidRegistry.addBucketForFluid(FluidRegistryHandler.fluidMud);
+        }
     }
     @EventHandler
     public void serverStarting(FMLServerStartingEvent event)

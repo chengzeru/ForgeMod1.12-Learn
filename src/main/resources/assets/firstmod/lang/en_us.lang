@@ -34,3 +34,7 @@ commands.power.clearOrange=§eOrange Power has been clear %s
 commands.power.addBlue=§bBlue Power has been add %s
 commands.power.addGreen=§bGreen Power has been add %s
 commands.power.addOrange=§bOrange Power has been add %s
+
+fluid.mud=Mud
+tile.firstmod.fluidMudBlock.name=Mud
+item.firstmod.bucketMud.name=Mud Bucket

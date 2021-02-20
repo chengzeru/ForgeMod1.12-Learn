@@ -34,3 +34,7 @@ commands.power.clearOrange=§e橘色之力已被清除%s
 commands.power.addBlue=§b蓝色之力已被添加%s
 commands.power.addGreen=§a绿色之力已被添加%s
 commands.power.addOrange=§e橘色之力已被添加%s
+
+fluid.mud=泥浆
+tile.firstmod.fluidMudBlock.name=泥浆
+item.firstmod.bucketMud.name=泥浆桶

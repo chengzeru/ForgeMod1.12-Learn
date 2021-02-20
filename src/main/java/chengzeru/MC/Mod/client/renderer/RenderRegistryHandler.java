@@ -3,6 +3,7 @@ package chengzeru.MC.Mod.client.renderer;
 
 import chengzeru.MC.Mod.entity.EntityDirtBall;
 import chengzeru.MC.Mod.entity.EntityDirtBallKing;
+import chengzeru.MC.Mod.fluid.FluidRegistryHandler;
 import chengzeru.MC.Mod.item.ItemRegistryHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
@@ -16,5 +17,6 @@ public class RenderRegistryHandler {
             RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
             return new RenderSnowball<EntityDirtBall>(manager, ItemRegistryHandler.DIRT_BALL, renderItem);
         });
+        FluidRegistryHandler.registerRenders();
     }
 }
