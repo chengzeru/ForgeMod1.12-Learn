@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: MC Mod
-Implementation-Version: 1.0.0
-Specification-Vendor: examplemodsareus
-Specification-Title: examplemod
-Implementation-Timestamp: 2021-01-25T22:57:30+0800
-Specification-Version: 1
-Implementation-Vendor: examplemodsareus
-
