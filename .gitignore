@@ -1,0 +1,29 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# 排除文件
+build
+out
+run
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# 排除所有.开头的隐藏文件:
+.*
+
+# 不排除.gitignore和App.class:
+!.gitignore
+
