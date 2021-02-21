@@ -42,7 +42,9 @@ public class MyFirstMod {
         else
         {
             FluidRegistry.registerFluid(FluidRegistryHandler.fluidMud);
-            FluidRegistry.addBucketForFluid(FluidRegistryHandler.fluidMud);
+            if(FluidRegistry.isFluidRegistered(FluidRegistryHandler.fluidMud)){
+                FluidRegistry.addBucketForFluid(FluidRegistryHandler.fluidMud);
+            }
         }
     }
     @EventHandler

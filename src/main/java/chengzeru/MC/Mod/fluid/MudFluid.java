@@ -10,10 +10,12 @@ public class MudFluid extends Fluid {
 
     public MudFluid() {
         super("mud", MudFluid.still, MudFluid.flowing);
-        this.setUnlocalizedName(MyFirstMod.MODID+"fluidMud");
+        this.setUnlocalizedName(MyFirstMod.MODID+".fluidMud");
         this.setDensity(3000);
-        this.setViscosity(10000);
+        this.setViscosity(2000);
         this.setLuminosity(0);
         this.setTemperature(300);
     }
+
+
 }

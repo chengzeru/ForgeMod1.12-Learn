@@ -37,4 +37,4 @@ commands.power.addOrange=§e橘色之力已被添加%s
 
 fluid.mud=泥浆
 tile.firstmod.fluidMudBlock.name=泥浆
-item.firstmod.bucketMud.name=泥浆桶
+item.forge.bucketFilled.name=泥浆桶

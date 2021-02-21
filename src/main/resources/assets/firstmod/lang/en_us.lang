@@ -37,4 +37,4 @@ commands.power.addOrange=§bOrange Power has been add %s
 
 fluid.mud=Mud
 tile.firstmod.fluidMudBlock.name=Mud
-item.firstmod.bucketMud.name=Mud Bucket
+item.forge.bucketFilled.name=Mud Fluid Bucket
