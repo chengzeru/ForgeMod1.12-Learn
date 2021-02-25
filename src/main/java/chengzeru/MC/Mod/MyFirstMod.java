@@ -17,7 +17,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.Logger;
 
 @Mod(modid = MyFirstMod.MODID, name = MyFirstMod.NAME,
-        version = MyFirstMod.VERSION, acceptedMinecraftVersions = "[1.12,)")
+        version = MyFirstMod.VERSION, acceptedMinecraftVersions = "[1.12,)",
+        guiFactory = "chengzeru.MC.Mod.config.FirstmodConfigGuiFactory")
 public class MyFirstMod {
     public static final String MODID = "firstmod";
     public static final String NAME = "My First Mod";

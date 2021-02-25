@@ -38,3 +38,6 @@ commands.power.addOrange=§e橘色之力已被添加%s
 fluid.mud=泥浆
 tile.firstmod.fluidMudBlock.name=泥浆
 item.forge.bucketFilled.name=泥浆桶
+
+config.firstmod.general.dirtBurnTime=泥土燃烧时间
+config.firstmod.general.dirtBurnTime.tooltip=一个泥土能燃烧多长时间 (0-1000)?

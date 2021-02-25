@@ -38,3 +38,6 @@ commands.power.addOrange=§bOrange Power has been add %s
 fluid.mud=Mud
 tile.firstmod.fluidMudBlock.name=Mud
 item.forge.bucketFilled.name=Mud Fluid Bucket
+
+config.firstmod.general.dirtBurnTime=Dirt Burn Time
+config.firstmod.general.dirtBurnTime.tooltip=How long will a dirt burn (0-1000)?
