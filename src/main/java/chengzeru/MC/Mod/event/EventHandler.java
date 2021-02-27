@@ -4,6 +4,7 @@ import chengzeru.MC.Mod.MyFirstMod;
 import chengzeru.MC.Mod.capability.CapabilityRegistryHandler;
 import chengzeru.MC.Mod.capability.DirtBallPower;
 import chengzeru.MC.Mod.command.CommandLoader;
+import chengzeru.MC.Mod.config.FirstmodConfig;
 import chengzeru.MC.Mod.enchantment.EnchantmentRegistryHandler;
 import chengzeru.MC.Mod.entity.EntityDirtBallKing;
 import chengzeru.MC.Mod.network.NetworkRegistryHandler;
@@ -22,11 +23,15 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraftforge.common.config.Config;
+import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.EntityStruckByLightningEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.event.terraingen.OreGenEvent;
+import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -127,6 +132,18 @@ public class EventHandler {
 
             }
         }
+    }
+
+    @SubscribeEvent
+    public static void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event){
+        if (event.getModID().equals(MyFirstMod.MODID)){
+            ConfigManager.sync(MyFirstMod.MODID, Config.Type.INSTANCE);
+        }
+    }
+
+    @SubscribeEvent
+    public static void onOreGen(OreGenEvent.Post event){
+
     }
 
     public static void serverStarting(FMLServerStartingEvent event)

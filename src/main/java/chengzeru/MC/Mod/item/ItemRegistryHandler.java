@@ -24,6 +24,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 @Mod.EventBusSubscriber
 public class ItemRegistryHandler {
     public static final ItemDirtBall DIRT_BALL = new ItemDirtBall();
+    public static final ItemDirtAppleFood DIRT_APPLE_FOOD= new ItemDirtAppleFood();
     public static final ItemBlock ITEM_COMPRESSED_DIRT = withRegistryName(new ItemBlock(BlockRegistryHandler.BLOCK_COMPRESSED_DIRT));
     public static final ItemBlock ITEM_DIRT_COMPRESSOR=withRegistryName(new ItemBlock(BlockRegistryHandler.BLOCK_DIRT_COMPRESSOR));
     public static final Item.ToolMaterial DIRT_TOOL_MATERIAL = EnumHelper.addToolMaterial("DIRT", 1, 44, 3.0f, 1.0f, 5);
@@ -40,6 +41,7 @@ public class ItemRegistryHandler {
     public static void onRegistry(RegistryEvent.Register<Item> event) {
         IForgeRegistry<Item> registry = event.getRegistry();
         registry.register(DIRT_BALL);
+        registry.register(DIRT_APPLE_FOOD);
         registry.register(ITEM_COMPRESSED_DIRT);
         registry.register(ITEM_DIRT_COMPRESSOR);
         registry.register(DIRT_PICKAXE);
@@ -54,6 +56,8 @@ public class ItemRegistryHandler {
     @SideOnly(Side.CLIENT)
     public static void onModelRegistry(ModelRegistryEvent event) {
         registerModel(DIRT_BALL);
+        registerModel(DIRT_APPLE_FOOD,0);
+        registerModel(DIRT_APPLE_FOOD,1);
         registerModel(ITEM_COMPRESSED_DIRT);
         registerModel(ITEM_DIRT_COMPRESSOR);
         registerModel(DIRT_PICKAXE);
@@ -69,6 +73,12 @@ public class ItemRegistryHandler {
     private static void registerModel(Item item) {
         ModelResourceLocation model = new ModelResourceLocation(item.getRegistryName(), "inventory");
         ModelLoader.setCustomModelResourceLocation(item, 0, model);
+    }
+
+    @SideOnly(Side.CLIENT)
+    private static void registerModel(Item item,int meta) {
+        ModelResourceLocation model = new ModelResourceLocation(item.getRegistryName(), "inventory");
+        ModelLoader.setCustomModelResourceLocation(item, meta, model);
     }
 
     private static ItemBlock withRegistryName(ItemBlock item) {
