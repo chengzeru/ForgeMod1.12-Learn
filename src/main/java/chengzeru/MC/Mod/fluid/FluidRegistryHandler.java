@@ -13,24 +13,21 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class FluidRegistryHandler {
-    public static Fluid fluidMud=new MudFluid();
+    public static Fluid fluidMud = new MudFluid();
+
     @SideOnly(Side.CLIENT)
-    public static void registerRenders()
-    {
+    public static void registerRenders() {
         registerFluidRender(BlockRegistryHandler.BLOCK_FLUID_MUD, "fluid_mud");
     }
 
     @SideOnly(Side.CLIENT)
-    public static void registerFluidRender(BlockFluidBase blockFluid, String blockStateName)
-    {
+    public static void registerFluidRender(BlockFluidBase blockFluid, String blockStateName) {
         final String location = MyFirstMod.MODID + ":" + blockStateName;
         final Item itemFluid = Item.getItemFromBlock(blockFluid);
         ModelLoader.setCustomMeshDefinition(itemFluid, stack -> new ModelResourceLocation(location, "fluid"));
-        ModelLoader.setCustomStateMapper(blockFluid, new StateMapperBase()
-        {
+        ModelLoader.setCustomStateMapper(blockFluid, new StateMapperBase() {
             @Override
-            protected ModelResourceLocation getModelResourceLocation(IBlockState state)
-            {
+            protected ModelResourceLocation getModelResourceLocation(IBlockState state) {
                 return new ModelResourceLocation(location, "fluid");
             }
         });
